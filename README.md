@@ -1,2 +1,2 @@
 # JodaTest
-Simple App to test IANA DST Timezone converted using JODA Library
+Simple App to test IANA Timezone converted using JODA Library in order to check if DST timezone is detected
