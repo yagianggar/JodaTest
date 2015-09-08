@@ -38,11 +38,17 @@ public class App
 		
 		// Set IANA Timezone for Australia/Sydney
 		app.setIanaTimeZone("Australia/Sydney");
-        System.out.println( "Location : " + app.getIanaTimeZone());
+		System.out.println( "Location : " + app.getIanaTimeZone());
         DateTimeZone sydZone = DateTimeZone.forID(app.getIanaTimeZone());
-        System.out.println("Date of 2015-10-04 20:00 : " + TIME_FORMATTER.parseDateTime("2015-10-04 20:00").withZone(sydZone));
-        System.out.println("Date of 2015-09-30 20:00 : " + TIME_FORMATTER.parseDateTime("2015-09-30 20:00").withZone(sydZone));
-        System.out.println("Date of 2015-09-30 20:00 : " + TIME_FORMATTER.parseDateTime("2016-10-02 20:00").withZone(sydZone));
+        
+        app.setTestedDate("2015-10-04 20:00");
+        System.out.println("Date of "+ app.getTestedDate() +" : " + TIME_FORMATTER.parseDateTime(app.getTestedDate()).withZone(sydZone));
+        
+        app.setTestedDate("2015-09-30 20:00");
+        System.out.println("Date of "+ app.getTestedDate() +" : " + TIME_FORMATTER.parseDateTime(app.getTestedDate()).withZone(sydZone));
+        
+        app.setTestedDate("2016-10-02 20:00");
+        System.out.println("Date of "+ app.getTestedDate() +" : " + TIME_FORMATTER.parseDateTime(app.getTestedDate()).withZone(sydZone));
         
         System.out.println("\n ======= \n");
         
@@ -53,8 +59,12 @@ public class App
 		app.setIanaTimeZone("Australia/Perth");
         System.out.println( "Location : " + app.getIanaTimeZone());
         DateTimeZone perthZone = DateTimeZone.forID(app.getIanaTimeZone());
-        System.out.println("Date of 2016-10-02 20:00 : " + TIME_FORMATTER.parseDateTime("2016-10-02 20:00").withZone(perthZone));
-        System.out.println("Date of 2016-04-01 20:00 : " + TIME_FORMATTER.parseDateTime("2016-04-01 20:00").withZone(perthZone));
+        
+        app.setTestedDate("2015-10-04 20:00");
+        System.out.println("Date of "+ app.getTestedDate() +" : " + TIME_FORMATTER.parseDateTime(app.getTestedDate()).withZone(perthZone));
+        
+        app.setTestedDate("2016-04-01 20:00");
+        System.out.println("Date of "+ app.getTestedDate() +" : " + TIME_FORMATTER.parseDateTime(app.getTestedDate()).withZone(perthZone));
         
         System.out.println("\n ======= \n");
         
@@ -65,8 +75,12 @@ public class App
 		app.setIanaTimeZone("Australia/Melbourne");
         System.out.println( "Location : " + app.getIanaTimeZone());
         DateTimeZone melbourneZone = DateTimeZone.forID(app.getIanaTimeZone());
-        System.out.println("Date of 2015-10-04 20:00 : " + TIME_FORMATTER.parseDateTime("2015-10-04 20:00").withZone(melbourneZone));
-        System.out.println("Date of 2015-10-03 20:00 : " + TIME_FORMATTER.parseDateTime("2015-10-03 20:00").withZone(melbourneZone));
+        
+        app.setTestedDate("2016-04-01 20:00");
+        System.out.println("Date of "+ app.getTestedDate() +" : " + TIME_FORMATTER.parseDateTime(app.getTestedDate()).withZone(melbourneZone));
+        
+        app.setTestedDate("2015-10-03 20:00");
+        System.out.println("Date of "+ app.getTestedDate() +" : " + TIME_FORMATTER.parseDateTime(app.getTestedDate()).withZone(melbourneZone));
         
         System.out.println("\n ======= \n");
         
@@ -77,8 +91,12 @@ public class App
 		app.setIanaTimeZone("Asia/Novosibirsk");
         System.out.println( "Location : " + app.getIanaTimeZone());
         DateTimeZone novoZone = DateTimeZone.forID(app.getIanaTimeZone());
-        System.out.println("Date of 2016-03-01 20:00 : " + TIME_FORMATTER.parseDateTime("2016-03-01 20:00").withZone(novoZone));
-        System.out.println("Date of 2016-04-15 20:00 : " + TIME_FORMATTER.parseDateTime("2016-04-15 20:00").withZone(novoZone));
+        
+        app.setTestedDate("2016-03-01 20:00");
+        System.out.println("Date of " + app.getTestedDate() + " : " + TIME_FORMATTER.parseDateTime(app.getTestedDate()).withZone(novoZone));
+        
+        app.setTestedDate("2016-04-15 20:00");
+        System.out.println("Date of "+ app.getTestedDate() +" : " + TIME_FORMATTER.parseDateTime(app.getTestedDate()).withZone(novoZone));
         
         System.out.println("\n ======= \n");
         
@@ -89,8 +107,12 @@ public class App
 		app.setIanaTimeZone("America/Chicago");
         System.out.println( "Location : " + app.getIanaTimeZone());
         DateTimeZone chicagoZone = DateTimeZone.forID(app.getIanaTimeZone());
-        System.out.println("Date of 2016-03-13 20:00 : " + TIME_FORMATTER.parseDateTime("2016-03-13 20:00").withZone(chicagoZone));
-        System.out.println("Date of 2016-03-12 20:00 : " + TIME_FORMATTER.parseDateTime("2016-03-12 20:00").withZone(chicagoZone));
+        
+        app.setTestedDate("2016-03-13 20:00");
+        System.out.println("Date of "+ app.getTestedDate() +" : " + TIME_FORMATTER.parseDateTime(app.getTestedDate()).withZone(chicagoZone));
+        
+        app.setTestedDate("2016-03-12 20:00");
+        System.out.println("Date of "+ app.getTestedDate() +" : " + TIME_FORMATTER.parseDateTime(app.getTestedDate()).withZone(chicagoZone));
         
         System.out.println("\n ======= \n");
         
@@ -101,8 +123,12 @@ public class App
 		app.setIanaTimeZone("America/Indiana/Indianapolis");
         System.out.println( "Location : " + app.getIanaTimeZone());
         DateTimeZone indianaZone = DateTimeZone.forID(app.getIanaTimeZone());
-        System.out.println("Date of 2016-03-13 20:00 : " + TIME_FORMATTER.parseDateTime("2016-03-13 20:00").withZone(indianaZone));
-        System.out.println("Date of 2016-03-12 20:00 : " + TIME_FORMATTER.parseDateTime("2016-03-12 20:00").withZone(indianaZone));
+        
+        app.setTestedDate("2016-03-13 20:00");
+        System.out.println("Date of "+ app.getTestedDate() +" : " + TIME_FORMATTER.parseDateTime(app.getTestedDate()).withZone(indianaZone));
+        
+        app.setTestedDate("2016-03-12 20:00");
+        System.out.println("Date of "+ app.getTestedDate() +" : " + TIME_FORMATTER.parseDateTime(app.getTestedDate()).withZone(indianaZone));
         
     }
 }
